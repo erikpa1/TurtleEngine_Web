@@ -14,17 +14,14 @@ def CreateApp(test_config = None):
     except OSError:
         pass
 
-    @app.route('/')
-    def hello():
-        return render_template('index.html')
 
     print("Flask app created")
     return app
 
+
+@app.route('/')
+def main():
+    return "Hello"
+
 app = CreateApp()
 app.run(debug = True)
-
-
-
-
-
