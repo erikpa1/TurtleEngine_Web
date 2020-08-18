@@ -1,5 +1,6 @@
+from server.bases import Screen
 
-class ScreenMain():
+class ScreenMain(Screen):
 
-    def RenderTemplate(self):
-        return ""
+    def GetDefaultScreen(self):
+        return super().RenderTemplate("server/screen_main.html")

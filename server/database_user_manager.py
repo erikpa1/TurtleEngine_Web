@@ -7,7 +7,7 @@ class UsersManager:
     LOGIN_SUCCESS = 1
 
     def LoginCheck(self, username: str, password: str):
-        pass
+        return username == "Erik"
 
     def GetUser(self, username: str, password: str):
         pass
