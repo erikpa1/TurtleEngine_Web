@@ -8,7 +8,7 @@ databaseName = "database_test"
 
 os.remove(os.path.abspath('./' + databaseName + ".db"))
 
-#Creating testing database
+
 db = DatabaseManager(databaseName)
 
 user1 = User()
